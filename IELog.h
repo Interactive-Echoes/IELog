@@ -25,7 +25,7 @@ namespace Private
     static constexpr const char* ColorSpecifierRed = "\033[31m";
     static constexpr const char* ColorSpecifierGreen = "\033[32m";
     static constexpr const char* ColorSpecifierYellow = "\033[33m";
-    void IELog(int LogLevel, const char* FuncName, const char* Format, ...)
+    inline void IELog(int LogLevel, const char* FuncName, const char* Format, ...)
     {
         const char* ColorCode = nullptr;
         const char* LevelString = nullptr;
